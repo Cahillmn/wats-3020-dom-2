@@ -4,8 +4,8 @@ function createPersonEl(title,firstname,lastname,email) {
   return nameEl
 }
 //TODO add the URL to fetch data from the randomuser.me api
-fetch()
-  .then(function (response) {
+fetch('https://randomuser.me/api/?results=3')  
+.then(function (response) {
     return response.json();
   })
   .then(function (myJson) {
